@@ -1,0 +1,28 @@
+OrdererOrgs:
+  - Name: orderer
+    Domain: gov.io
+    EnableNodeOUs: true
+    Specs:
+      - Hostname: orderer1
+      - Hostname: orderer2
+      - Hostname: orderer3
+
+PeerOrgs:
+  - Name: governance
+    Domain: gov.io
+    EnableNodeOUs: true
+    Specs:
+      - Hostname: peergov1
+    Users:
+      Count: 2
+
+  - Name: teafarm
+    Domain: production.com
+    EnableNodeOUs: true
+    Specs:
+      - Hostname: peertf1
+      - Hostname: peertf2
+    Users:
+      Count: 2
+
+  
